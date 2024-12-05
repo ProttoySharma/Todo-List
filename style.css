@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.container {
+    height: 100vh;
+    background: linear-gradient(45deg, #235, rgb(0, 241, 129));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.todo {
+    width: 100%;
+    max-width: 350px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 100px 0;
+    padding: 30px 20px 40px;
+    color: aliceblue;
+    font-family: "Lato", sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.field{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    background: aliceblue;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    background: aliceblue;
+    color: rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+li{
+    padding: 5px 20px;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    color:  rgba(61, 240, 156, 0.37);
+}
